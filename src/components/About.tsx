@@ -6,26 +6,31 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          Mid-level Software Engineer with hands-on experience in C#/.NET
-          application development, Angular front-end engineering, and Azure
-          cloud environments. I build maintainable, scalable, and secure
-          software with strong ownership of SDLC, Agile delivery, and
-          cross-team collaboration with product managers, QA teams, and
-          stakeholders.
+          I am a full-stack software developer focused on building secure,
+          scalable, and practical digital products across frontend, backend,
+          databases, and cloud environments. My experience covers C#/.NET,
+          React, Angular, Node.js, SQL Server, and Azure, with emphasis on
+          clean architecture, reliable APIs, and strong user experience.
         </p>
         <p className="para">
-          I am currently pursuing MSc Software Engineering at Nottingham Trent
-          University and building real-world projects in Python, AI, and system
-          simulations. My stack spans frontend, backend, databases, testing,
-          CI/CD, and cloud, with practical experience delivering reliable
-          software from idea to deployment.
+          I am currently completing an MSc in Software Engineering at
+          Nottingham Trent University while continuing to develop projects in
+          AI-assisted applications, system simulations, and data-driven tools.
+          I enjoy turning complex requirements into production-ready software
+          that is maintainable, testable, and easy to extend.
         </p>
         <div className="visa-info">
-          <span>Core: C#, JavaScript, SQL, Python | ASP.NET Core | Angular</span>
-          <span>Cloud & QA: Azure, CI/CD, Unit Testing, Test Automation, Scrum</span>
           <span>
-            AI & Mobile: TensorFlow, OpenAI API, Flutter, React Native,
-            Firebase
+            Core Engineering: C#, JavaScript, TypeScript, SQL, Python,
+            ASP.NET Core, React, Angular
+          </span>
+          <span>
+            Delivery & Quality: Azure, REST APIs, CI/CD, Unit Testing, Agile,
+            Scrum, Documentation
+          </span>
+          <span>
+            AI, Mobile & Systems: TensorFlow, OpenAI API, Flutter, React
+            Native, Firebase, system simulation
           </span>
         </div>
       </div>

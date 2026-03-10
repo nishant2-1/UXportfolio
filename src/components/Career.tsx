@@ -21,11 +21,11 @@ const Career = () => {
               <h3>2022 - Present</h3>
             </div>
             <p>
-              Designed and implemented full-stack web applications with SQL
-              databases, REST APIs, and front-end frameworks including HTML,
-              CSS, Bootstrap, jQuery, and React. Worked directly with clients
-              on requirements, testing, documentation, and process improvements
-              for scalable system delivery.
+              Delivering end-to-end web solutions for clients, from requirement
+              gathering and UI implementation to backend logic, database
+              design, testing, and deployment support. Projects have included
+              business dashboards, management systems, and responsive web
+              applications built for maintainability and real-world use.
             </p>
           </div>
           <div className="career-info-box">
@@ -37,10 +37,11 @@ const Career = () => {
               <h3>Jul 2024 - Sep 2024</h3>
             </div>
             <p>
-              Developed internal dashboards using C#, ASP.NET Core, SQL Server,
-              and JavaScript/jQuery. Performed software testing, debugging, and
-              technical documentation for ERP and management systems while
-              collaborating with internal teams to optimize workflows.
+              Built and supported internal ERP-style dashboards using C#,
+              ASP.NET Core, SQL Server, and JavaScript/jQuery. Contributed to
+              debugging, workflow analysis, testing, and technical
+              documentation while collaborating with teams to improve delivery
+              quality and process efficiency.
             </p>
           </div>
           <div className="career-info-box">
@@ -52,10 +53,10 @@ const Career = () => {
               <h3>Expected Sep 2025</h3>
             </div>
             <p>
-              Focused on mobile interactive system design, software
-              architecture, Agile/Scrum delivery, and collaborative engineering.
-              Modules include Advanced Algorithms, Software Engineering, Cloud
-              Computing, and Machine Learning.
+              Strengthening my foundation in software architecture, advanced
+              algorithms, cloud computing, machine learning, and collaborative
+              engineering. The course has sharpened both my technical depth and
+              my ability to design software with strong engineering process.
             </p>
           </div>
           <div className="career-info-box">
@@ -67,9 +68,10 @@ const Career = () => {
               <h3>Graduated 2024</h3>
             </div>
             <p>
-              CGPA 8.91 / A+. Developed strong foundations in software testing,
-              DevOps, project management, UI/UX technology, data mining, and
-              big data analytics.
+              Graduated with a CGPA of 8.91 / A+. Built strong fundamentals in
+              software development, testing, DevOps, UI/UX, project
+              management, data mining, and analytical problem solving through
+              both coursework and applied project work.
             </p>
           </div>
         </div>

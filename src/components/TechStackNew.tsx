@@ -1,4 +1,4 @@
-import { FaReact, FaNodeJs, FaPython, FaDatabase, FaGit, FaDocker } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaPython, FaGit, FaDocker } from 'react-icons/fa';
 import { SiFlask, SiMysql, SiOpenai, SiTypescript, SiJavascript, SiTailwindcss } from 'react-icons/si';
 import "./styles/TechStack.css";
 

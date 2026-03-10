@@ -45,7 +45,7 @@ const DataViz = () => {
           color: '#ffffff',
           font: {
             size: 14,
-            weight: '500' as const,
+            weight: 'bold' as const,
           },
           padding: 20,
         },
