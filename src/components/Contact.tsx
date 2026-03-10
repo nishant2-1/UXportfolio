@@ -35,7 +35,7 @@ const Contact = () => {
               GitHub <MdArrowOutward />
             </a>
             <a
-              href="https://leetcode.com/"
+              href="https://leetcode.com/u/nishant1-1/"
               target="_blank"
               rel="noopener noreferrer"
               data-cursor="disable"
@@ -51,7 +51,7 @@ const Contact = () => {
               Portfolio <MdArrowOutward />
             </a>
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/nishant-landage-76866a2b3/"
               target="_blank"
               rel="noopener noreferrer"
               data-cursor="disable"
