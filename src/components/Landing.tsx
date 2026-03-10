@@ -15,8 +15,8 @@ const Landing = ({ children }: PropsWithChildren) => {
             </h1>
             <div className="visa-badge">
               <p>
-                Leeds, United Kingdom | Mid-Level Software Engineer | C#/.NET,
-                Angular, React, Python, Azure
+                Software Developer | Full-Stack Developer | Building scalable,
+                secure, and AI-powered applications
               </p>
             </div>
           </div>

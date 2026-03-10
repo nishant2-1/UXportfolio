@@ -1,11 +1,7 @@
-import {
-  FaGithub,
-  FaInstagram,
-  FaLinkedinIn,
-  FaXTwitter,
-} from "react-icons/fa6";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
+import { SiLeetcode } from "react-icons/si";
 import "./styles/SocialIcons.css";
-import { TbNotes } from "react-icons/tb";
+import { TbNotes, TbWorld } from "react-icons/tb";
 import { useEffect } from "react";
 import HoverLinks from "./HoverLinks";
 
@@ -60,23 +56,31 @@ const SocialIcons = () => {
     <div className="icons-section">
       <div className="social-icons" data-cursor="icons" id="social">
         <span>
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/nishant2-1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaGithub />
           </a>
         </span>
         <span>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaLinkedinIn />
           </a>
         </span>
         <span>
           <a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer">
-            <FaXTwitter />
+            <SiLeetcode />
           </a>
         </span>
         <span>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <FaInstagram />
+          <a href="#work" aria-label="Portfolio Projects">
+            <TbWorld />
           </a>
         </span>
       </div>
