@@ -1,0 +1,161 @@
+/* System Architecture Section */
+.architecture-section {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, rgba(0, 40, 20, 0.3) 0%, rgba(0, 60, 40, 0.2) 100%);
+  color: #ffffff;
+  border-top: 1px solid rgba(0, 255, 136, 0.2);
+}
+
+.architecture-section h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.architecture-section h2 span {
+  background: linear-gradient(90deg, #00ff88, #00d4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.arch-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #b0b0b0;
+  margin-bottom: 50px;
+}
+
+/* Architecture Diagram */
+.architecture-diagram {
+  background: rgba(20, 40, 30, 0.6);
+  border: 1px solid rgba(0, 255, 136, 0.3);
+  border-radius: 16px;
+  padding: 40px;
+  margin-bottom: 50px;
+  backdrop-filter: blur(10px);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.arch-layer {
+  background: rgba(30, 50, 40, 0.7);
+  border: 2px solid rgba(0, 255, 136, 0.4);
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.arch-layer h3 {
+  color: #00ff88;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.arch-components {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  justify-items: center;
+}
+
+.component {
+  background: rgba(0, 212, 255, 0.1);
+  border: 1px solid rgba(0, 212, 255, 0.5);
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 0.9rem;
+  color: #00d4ff;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.component:hover {
+  background: rgba(0, 212, 255, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 212, 255, 0.2);
+}
+
+.arch-arrow {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #00ff88;
+  margin: 15px 0;
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+/* Architecture Features Grid */
+.arch-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.feature-box {
+  background: rgba(30, 40, 70, 0.6);
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  border-radius: 12px;
+  padding: 25px;
+  transition: all 0.3s ease;
+}
+
+.feature-box:hover {
+  background: rgba(30, 40, 70, 0.8);
+  border-color: rgba(0, 212, 255, 0.6);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 212, 255, 0.15);
+}
+
+.feature-box h4 {
+  font-size: 1.2rem;
+  color: #00d4ff;
+  margin-bottom: 15px;
+}
+
+.feature-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-box li {
+  color: #b0b0b0;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.feature-box li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #00ff88;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .architecture-section h2 {
+    font-size: 2rem;
+  }
+
+  .architecture-diagram {
+    padding: 25px;
+  }
+
+  .arch-components {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .arch-features {
+    grid-template-columns: 1fr;
+  }
+}
