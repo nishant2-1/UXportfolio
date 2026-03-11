@@ -35,11 +35,6 @@ const certificates: CertificateItem[] = [
   },
 ];
 
-const getQrCodeUrl = (url: string) =>
-  `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(
-    url
-  )}`;
-
 const Certificates = () => {
   return (
     <section className="certificates-section section-container" id="certificates">
@@ -49,9 +44,8 @@ const Certificates = () => {
           Verified <span>Credentials</span>
         </h2>
         <p className="certificates-lead">
-          Each card includes a certificate summary, direct verification link,
-          and a QR code. Tapping the QR or the button opens the certificate
-          page in a new tab.
+          Each certificate card includes a summary and direct hyperlinks so
+          visitors can instantly open and verify the credential page.
         </p>
       </div>
 
@@ -73,20 +67,15 @@ const Certificates = () => {
               >
                 Open Certificate
               </a>
+              <a
+                href={item.credentialUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="certificate-inline-url"
+              >
+                Verify Link: {item.credentialUrl}
+              </a>
             </div>
-
-            <a
-              href={item.credentialUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="certificate-qr-link"
-            >
-              <img
-                src={getQrCodeUrl(item.credentialUrl)}
-                alt={`QR code for ${item.title}`}
-              />
-              <span>Scan QR</span>
-            </a>
           </article>
         ))}
       </div>
