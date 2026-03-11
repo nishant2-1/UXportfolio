@@ -87,13 +87,13 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>FULL-STACK WEB DEVELOPMENT</h3>
+              <h3>FULL-STACK ENGINEERING</h3>
               <h4>What I deliver</h4>
               <p>
-                End-to-end web applications — clean, responsive frontends
-                paired with secure, well-structured backends. I own the full
-                delivery: UI components, REST APIs, database design, and
-                deployment, always following SDLC and Agile practices.
+                Architecting end-to-end web solutions with a focus on
+                scalability and high performance. I own the full stack from UI
+                to database, building reliable systems that are maintainable
+                and production-ready.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
@@ -132,26 +132,26 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>AI, CLOUD & MOBILE</h3>
+              <h3>SOFTWARE &amp; SYSTEMS ARCHITECTURE</h3>
               <h4>What I deliver</h4>
               <p>
-                Production-grade cloud-deployed applications and AI-assisted
-                tools that solve real problems. I integrate intelligent
-                features, build cross-platform mobile apps, and leverage cloud
-                infrastructure to deploy scalable and maintainable products
-                reliably.
+                Designing robust systems that scale. I bridge the gap between
+                code and infrastructure &mdash; choosing the right patterns,
+                cloud services, and tooling to support long-term product
+                growth.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
+                <div className="what-tags">System Design</div>
+                <div className="what-tags">Microservices</div>
+                <div className="what-tags">AWS (EC2, S3, Lambda)</div>
                 <div className="what-tags">Azure</div>
-                <div className="what-tags">Python</div>
-                <div className="what-tags">TensorFlow</div>
-                <div className="what-tags">OpenAI API</div>
-                <div className="what-tags">Flutter</div>
-                <div className="what-tags">React Native</div>
-                <div className="what-tags">Firebase</div>
-                <div className="what-tags">Data Analytics</div>
-                <div className="what-tags">System Simulation</div>
+                <div className="what-tags">Docker</div>
+                <div className="what-tags">CI/CD Pipelines</div>
+                <div className="what-tags">GitHub Actions</div>
+                <div className="what-tags">Jest</div>
+                <div className="what-tags">Cypress</div>
+                <div className="what-tags">NUnit</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -175,25 +175,64 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>TESTING, DEVOPS & DELIVERY</h3>
+              <h3>INTERACTIVE SYSTEMS &amp; MOBILE</h3>
               <h4>What I deliver</h4>
               <p>
-                Reliable software with structured testing strategies,
-                automated CI/CD pipelines, and Agile delivery workflows.
-                I ensure each release is verifiable, well-documented, and
-                production-ready — reducing risk and improving team velocity.
+                Creating seamless, cross-platform experiences that prioritize
+                user engagement. I apply HCI principles and accessibility
+                standards to build interfaces that feel fast, inclusive, and
+                intuitive.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Unit Testing</div>
-                <div className="what-tags">CI/CD</div>
-                <div className="what-tags">DevOps</div>
+                <div className="what-tags">Flutter</div>
+                <div className="what-tags">React Native</div>
+                <div className="what-tags">Firebase</div>
+                <div className="what-tags">Interactive UI Design</div>
+                <div className="what-tags">Performance Optimization</div>
+                <div className="what-tags">HCI Principles</div>
+                <div className="what-tags">WCAG Accessibility</div>
+                <div className="what-tags">Mobile-Responsive</div>
+              </div>
+              <div className="what-arrow"></div>
+            </div>
+          </div>
+          <div
+            className="what-content what-noTouch"
+            ref={(el) => setRef(el, 3)}
+          >
+            <div className="what-border1">
+              <svg height="100%">
+                <line
+                  x1="0"
+                  y1="100%"
+                  x2="100%"
+                  y2="100%"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeDasharray="6,6"
+                />
+              </svg>
+            </div>
+            <div className="what-corner"></div>
+            <div className="what-content-in">
+              <h3>TECHNICAL PROJECT MANAGEMENT</h3>
+              <h4>What I deliver</h4>
+              <p>
+                Leveraging Master&apos;s-level training to lead development
+                cycles from discovery to deployment. I manage modules,
+                technical debt, and cross-functional team alignment with
+                structured Agile delivery.
+              </p>
+              <h5>Skillset &amp; tools</h5>
+              <div className="what-content-flex">
                 <div className="what-tags">Agile / Scrum</div>
-                <div className="what-tags">Git</div>
-                <div className="what-tags">Test Automation</div>
-                <div className="what-tags">Technical Docs</div>
-                <div className="what-tags">Code Review</div>
                 <div className="what-tags">Sprint Planning</div>
+                <div className="what-tags">Documentation</div>
+                <div className="what-tags">Risk Assessment</div>
+                <div className="what-tags">Technical Debt Management</div>
+                <div className="what-tags">Cross-functional Alignment</div>
+                <div className="what-tags">Git / GitHub</div>
               </div>
               <div className="what-arrow"></div>
             </div>

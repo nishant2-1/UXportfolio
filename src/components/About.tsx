@@ -6,18 +6,25 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          Full-stack developer with 3+ years of hands-on experience delivering
-          web applications, enterprise dashboards, and AI-assisted digital
-          tools. I work across the entire stack — from C#/.NET APIs and SQL
-          databases to React, Angular, and cloud deployments on Azure — with a
-          strong focus on code quality, testing, and real business outcomes.
+          I am a Software Engineer &amp; Full-Stack Developer with a Master&apos;s
+          degree, specializing in building secure, scalable, and highly
+          interactive digital systems.
         </p>
         <p className="para">
-          Currently completing an MSc in Software Engineering at Nottingham
-          Trent University (expected Sep 2025) while actively building
-          projects in Python AI, system simulation, and cross-platform mobile.
-          I take ownership from design to deployment and bring structured
-          Agile delivery to every team I join.
+          My expertise spans the entire development lifecycle &mdash; from
+          designing complex system architectures in AWS and C#/.NET to crafting
+          pixel-perfect frontend experiences in React. I don&apos;t just write
+          code; I design systems. With a strong foundation in Software
+          Engineering fundamentals and Project Management, I am adept at
+          breaking down complex requirements into manageable modules and
+          leading them to successful delivery.
+        </p>
+        <p className="para">
+          Having worked on mobile interactive systems and cloud-native
+          applications, I am passionate about creating software that is both
+          technically robust and user-centric. I thrive in international,
+          remote-first environments where clean code, system scalability, and
+          proactive communication are the standard.
         </p>
 
         <div className="about-stats">
