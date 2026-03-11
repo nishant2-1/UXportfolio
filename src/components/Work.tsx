@@ -15,9 +15,9 @@ const projects = [
     label: "Highlights",
     description:
       "Designed a modular simulation environment to model smarter signal control, improve traffic flow logic, and test real-world scenarios through structured algorithm design and validation.",
-    primaryText: "Discuss Project",
-    primaryHref: "#contact",
-    secondaryText: "Architecture Notes ->",
+    primaryText: "GitHub Repo",
+    primaryHref: "https://github.com/nishant2-1/Traffic-light-Simulator",
+    secondaryText: "Case Study",
     secondaryHref: "#about",
     image: "/images/insuresmart-ai.png",
     alt: "Smart Traffic Light Control and Simulation App",
@@ -30,8 +30,10 @@ const projects = [
     label: "Tech Stack",
     description:
       "Built a customer-facing shopping experience with React, Bootstrap, REST API integration, secure payment workflow planning, and an admin-oriented structure for catalogue and order management.",
-    primaryText: "View Summary",
-    primaryHref: "#contact",
+    primaryText: "GitHub Profile",
+    primaryHref: "https://github.com/nishant2-1?tab=repositories",
+    secondaryText: "Discuss Project",
+    secondaryHref: "#contact",
     image: "/images/architecture.png",
     alt: "E-commerce Web Platform",
   },
@@ -43,23 +45,25 @@ const projects = [
     label: "Tech Stack",
     description:
       "Combined React, Firebase, and Python-based analysis features to help users track spending, review trends, and work with a cleaner decision-making view of personal finance data.",
-    primaryText: "View Summary",
-    primaryHref: "#contact",
+    primaryText: "GitHub Profile",
+    primaryHref: "https://github.com/nishant2-1?tab=repositories",
+    secondaryText: "Discuss Project",
+    secondaryHref: "#contact",
     image: "/images/dashboard.png",
     alt: "Expense Analysis and Management App",
   },
   {
     id: "3",
     index: "04",
-    title: "Advanced AI Chatbot",
-    subtitle: "Conversational assistant prototype (2024)",
-    label: "Highlights",
+    title: "Bradford Council Asset & Schools Portal",
+    subtitle: "PHP · MySQL · Google Maps · TOTP 2FA (2026)",
+    label: "Tech Highlights",
     description:
-      "Developed a chatbot workflow focused on practical prompt handling, conversational response design, and user guidance, with supporting documentation to improve usability and onboarding.",
-    primaryText: "Explore Use Case",
-    primaryHref: "#contact",
-    image: "/images/insuresmart-ai.png",
-    alt: "Advanced AI Chatbot",
+      "Built a full-stack civic data portal for Bradford Council in PHP and MySQL (PDO). Engineered session-based auth with bcrypt hashing and TOTP 2FA (Google Authenticator), a role-based admin panel with full activity logging, and an asset/category management system with real-time Google Maps marker visualisation. Bulk-geocoded 380+ school records via OpenStreetMap Nominatim, linked KS4/KS5 performance metrics by URN, and delivered HTML email workflows with PHPMailer and 15-minute expiring reset tokens.",
+    secondaryText: "Private — Contact to Discuss",
+    secondaryHref: "#contact",
+    image: "/images/dashboard.png",
+    alt: "Bradford Council Asset and Schools Portal",
   },
   {
     id: "4",
@@ -69,8 +73,10 @@ const projects = [
     label: "Tech Stack",
     description:
       "Created a structured desktop-style management system using C#/.NET and SQL Server with CRUD workflows, modular architecture, and test-oriented thinking for maintainable business operations.",
-    primaryText: "View Summary",
-    primaryHref: "#contact",
+    primaryText: "GitHub Profile",
+    primaryHref: "https://github.com/nishant2-1?tab=repositories",
+    secondaryText: "Discuss Project",
+    secondaryHref: "#contact",
     image: "/images/architecture.png",
     alt: "Project Management System",
   },
@@ -138,16 +144,36 @@ const Work = () => {
                 <p>{project.description}</p>
                 <div className="work-buttons">
                   {project.secondaryText && project.secondaryHref && (
-                    <a href={project.secondaryHref} className="btn-secondary">
+                    <a
+                      href={project.secondaryHref}
+                      className="btn-secondary"
+                      target={project.secondaryHref.startsWith("http") ? "_blank" : undefined}
+                      rel={project.secondaryHref.startsWith("http") ? "noopener noreferrer" : undefined}
+                    >
                       {project.secondaryText}
                     </a>
                   )}
-                  <a href={project.primaryHref} className="btn-primary">
-                    {project.primaryText}
-                  </a>
+                  {project.primaryText && project.primaryHref && (
+                    <a
+                      href={project.primaryHref}
+                      className="btn-primary"
+                      target={project.primaryHref.startsWith("http") ? "_blank" : undefined}
+                      rel={project.primaryHref.startsWith("http") ? "noopener noreferrer" : undefined}
+                    >
+                      {project.primaryText}
+                    </a>
+                  )}
                 </div>
               </div>
-              <WorkImage image={project.image} alt={project.alt} />
+              <WorkImage
+                image={project.image}
+                alt={project.alt}
+                link={
+                  project.primaryHref && project.primaryHref.startsWith("http")
+                    ? project.primaryHref
+                    : undefined
+                }
+              />
             </div>
           ))}
         </div>
