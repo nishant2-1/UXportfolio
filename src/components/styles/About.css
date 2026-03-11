@@ -70,12 +70,42 @@
   }
 }
 
-/* Visa Info Section */
+/* Stats row */
+.about-stats {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+  margin-bottom: 4px;
+}
+
+.about-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.about-stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accentColor);
+  line-height: 1;
+}
+
+.about-stat-label {
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: #b7b7b7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Skill tags row */
 .visa-info {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-top: 30px;
+  margin-top: 28px;
   padding: 20px;
   background: rgba(0, 255, 136, 0.08);
   border-left: 3px solid rgba(0, 255, 136, 0.5);
@@ -84,6 +114,7 @@
 
 .visa-info span {
   color: #00ff88;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 500;
+  line-height: 1.5;
 }
