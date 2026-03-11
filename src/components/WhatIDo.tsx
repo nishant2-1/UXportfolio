@@ -88,12 +88,12 @@ const WhatIDo = () => {
 
             <div className="what-content-in">
               <h3>FULL-STACK WEB DEVELOPMENT</h3>
-              <h4>Description</h4>
+              <h4>What I deliver</h4>
               <p>
-                Design and implement production-ready web applications with
-                modern front-end and back-end technologies. Build clean UI,
-                robust APIs, and maintainable database layers while following
-                SDLC and Agile practices.
+                End-to-end web applications — clean, responsive frontends
+                paired with secure, well-structured backends. I own the full
+                delivery: UI components, REST APIs, database design, and
+                deployment, always following SDLC and Agile practices.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
@@ -102,12 +102,13 @@ const WhatIDo = () => {
                 <div className="what-tags">Angular</div>
                 <div className="what-tags">React.js</div>
                 <div className="what-tags">Node.js</div>
-                <div className="what-tags">HTML5</div>
-                <div className="what-tags">CSS3</div>
+                <div className="what-tags">TypeScript</div>
+                <div className="what-tags">HTML5 / CSS3</div>
                 <div className="what-tags">Bootstrap</div>
                 <div className="what-tags">jQuery</div>
                 <div className="what-tags">SQL Server</div>
                 <div className="what-tags">REST APIs</div>
+                <div className="what-tags">ERP / CRM</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -131,13 +132,14 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>AI, CLOUD, MOBILE & QA</h3>
-              <h4>Description</h4>
+              <h3>AI, CLOUD & MOBILE</h3>
+              <h4>What I deliver</h4>
               <p>
-                Deliver secure and scalable software with cloud services,
-                testing pipelines, and AI integration. Build practical AI
-                features, mobile experiences, and data-driven systems with
-                strong debugging, documentation, and process optimization.
+                Production-grade cloud-deployed applications and AI-assisted
+                tools that solve real problems. I integrate intelligent
+                features, build cross-platform mobile apps, and leverage cloud
+                infrastructure to deploy scalable and maintainable products
+                reliably.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
@@ -148,10 +150,50 @@ const WhatIDo = () => {
                 <div className="what-tags">Flutter</div>
                 <div className="what-tags">React Native</div>
                 <div className="what-tags">Firebase</div>
+                <div className="what-tags">Data Analytics</div>
+                <div className="what-tags">System Simulation</div>
+              </div>
+              <div className="what-arrow"></div>
+            </div>
+          </div>
+          <div
+            className="what-content what-noTouch"
+            ref={(el) => setRef(el, 2)}
+          >
+            <div className="what-border1">
+              <svg height="100%">
+                <line
+                  x1="0"
+                  y1="100%"
+                  x2="100%"
+                  y2="100%"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeDasharray="6,6"
+                />
+              </svg>
+            </div>
+            <div className="what-corner"></div>
+            <div className="what-content-in">
+              <h3>TESTING, DEVOPS & DELIVERY</h3>
+              <h4>What I deliver</h4>
+              <p>
+                Reliable software with structured testing strategies,
+                automated CI/CD pipelines, and Agile delivery workflows.
+                I ensure each release is verifiable, well-documented, and
+                production-ready — reducing risk and improving team velocity.
+              </p>
+              <h5>Skillset & tools</h5>
+              <div className="what-content-flex">
                 <div className="what-tags">Unit Testing</div>
                 <div className="what-tags">CI/CD</div>
-                <div className="what-tags">Agile/Scrum</div>
-                <div className="what-tags">ERP/MES/CRM</div>
+                <div className="what-tags">DevOps</div>
+                <div className="what-tags">Agile / Scrum</div>
+                <div className="what-tags">Git</div>
+                <div className="what-tags">Test Automation</div>
+                <div className="what-tags">Technical Docs</div>
+                <div className="what-tags">Code Review</div>
+                <div className="what-tags">Sprint Planning</div>
               </div>
               <div className="what-arrow"></div>
             </div>
