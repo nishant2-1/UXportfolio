@@ -16,7 +16,9 @@ interface LoadingType {
 export const LoadingContext = createContext<LoadingType | null>(null);
 
 export const LoadingProvider = ({ children }: PropsWithChildren) => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(
+    typeof window !== "undefined" ? window.innerWidth > 1024 : true
+  );
   const [loading, setLoading] = useState(0);
 
   const value = {
