@@ -1,53 +1,80 @@
-# Nishant Navanth Landage - Portfolio
+# Nishant Landage — Developer Portfolio
 
-Leeds, United Kingdom  
-Email: landagenishant25@gmail.com  
-Phone: +44 7818920485
+**Live Site → [sponsvi-portfolio.vercel.app](https://sponsvi-portfolio.vercel.app)**
 
-## Professional Summary
+> A personal portfolio built with React 18, TypeScript, Three.js, and GSAP — featuring a real-time 3D character, scroll-driven animations, and a responsive layout optimised for all screen sizes.
 
-Mid-level Software Engineer with hands-on experience in C#/.NET application development, Angular front-end, and Azure cloud environments. Skilled in unit testing, test automation, CI/CD, SDLC, and Agile delivery. Experienced in collaboration with product managers, QA teams, and cross-functional stakeholders to ship reliable software.
+---
 
-Currently pursuing MSc Software Engineering at Nottingham Trent University, building practical projects in Python, AI integration, and simulation systems.
+## About Me
 
-## Core Skills and Technologies
+I'm a mid-level Software Engineer based in Leeds, UK, with a breadth of experience across the full stack — from building cloud-connected .NET APIs and Angular front-ends in professional settings, to shipping full-stack civic data systems, mobile apps, and interactive 3D web experiences independently.
 
-- Programming Languages: C#, JavaScript, SQL, Python
-- Frameworks and Tools: ASP.NET Core, Angular, React.js, Node.js, HTML5, CSS3, Bootstrap, jQuery
-- Database Systems: SQL Server, CRUD operations, query optimization
-- AI and ML: TensorFlow, OpenAI API, Python ML integration
-- Mobile: Flutter, React Native, Android Studio, Firebase
-- Cloud and Backend: Azure, Firebase, REST APIs
-- Software Practices: Unit Testing, Test Automation, Documentation, SDLC, Agile/Scrum, Debugging
-- Additional Strengths: Workflow analysis, system optimization, stakeholder communication, process improvement
+I'm currently completing my **MSc Software Engineering / Computer Science at Nottingham Trent University** while continuing freelance client work, and I'm actively looking for full-time engineering roles in the UK.
+
+**Contact:** landagenishant25@gmail.com · +44 7818 920485 · Leeds, United Kingdom
+
+---
+
+## What I Can Build
+
+I'm comfortable across the whole product lifecycle — from database schema and back-end APIs to UI/UX, deployment, and delivery. Here's a breakdown of my practical capability:
+
+| Domain | Technologies |
+|---|---|
+| **Front-End & UI** | React, TypeScript, Angular, HTML5, CSS3, Bootstrap, jQuery, GSAP, Three.js, WebGL |
+| **Back-End & APIs** | ASP.NET Core (C#), Node.js, PHP, REST APIs, PHPMailer |
+| **Databases** | SQL Server, MySQL (PDO), Firebase Realtime DB, CRUD, query optimisation |
+| **Mobile** | Flutter, React Native, Android Studio |
+| **Cloud & DevOps** | Azure, Firebase, Vercel, Git, CI/CD, GitHub Actions |
+| **AI & ML** | TensorFlow, OpenAI API, Python ML, simulation systems |
+| **Engineering Practices** | Agile/Scrum, SDLC, Unit Testing, Test Automation, Technical Documentation |
+
+---
 
 ## Professional Experience
 
-- Freelance Full-Stack Developer | Remote (India & UK) | 2022 - Present
-- Web and Full-Stack Development Intern | InnovateSoft | Jul 2024 - Sep 2024
+**Freelance Full-Stack Developer** · Remote (India & UK) · 2022 – Present
+- Delivered end-to-end web and mobile applications for clients across industries
+- Projects span civic data portals, e-commerce platforms, management systems, and AI-integrated tools
+
+**Web and Full-Stack Development Intern** · InnovateSoft · Jul 2024 – Sep 2024
+- Contributed to Angular front-end development and .NET back-end service work
+- Worked within an Agile team with code reviews, sprint planning, and CI/CD pipelines
+
+---
 
 ## Key Projects
 
-- Smart Traffic Light Control and Simulation App (2025)
-- E-commerce Web Platform (2023)
-- Expense Analysis and Management App (2024)
-- Advanced AI Chatbot (2024)
-- Project Management System (2025)
+| Project | Stack | Highlights |
+|---|---|---|
+| **Bradford Council Asset & Schools Portal** | PHP, MySQL, Google Maps API, OpenStreetMap | Session auth + TOTP 2FA; role-based admin; bulk-geocoded 380+ school records; KS4/KS5 metrics by URN |
+| **Smart Traffic Light Control & Simulation App** | Python, Simulation, AI | Real-time traffic simulation with adaptive control algorithms |
+| **E-commerce Web Platform** | React, Node.js, SQL Server | Full product catalogue, cart, checkout, and admin dashboard |
+| **Expense Analysis & Management App** | Flutter, Firebase | Cross-platform mobile app with real-time data sync and analytics |
+| **Project Management System** | ASP.NET Core, Angular, SQL Server | Role-based task management with full audit trail |
+
+---
 
 ## Education
 
-- MSc Software Engineering / Computer Science, Nottingham Trent University, UK (Expected Sep 2025)
-- B.Tech Computer Science Engineering, Walchand Institute of Technology, India (Graduated 2024, CGPA: 8.91/A+)
+- **MSc Software Engineering / Computer Science** — Nottingham Trent University, UK *(Expected Sep 2025)*
+- **B.Tech Computer Science Engineering** — Walchand Institute of Technology, India *(Graduated 2024, CGPA: 8.91 / A+)*
 
-## Instructions
+---
 
-This project uses GSAP plugins. For production use of Club plugins, check: https://gsap.com/docs/v3/Installation/
+## This Portfolio — Tech Notes
 
-## Tech Stack
+Built from scratch as a creative engineering project. Key implementation details:
 
-React, TypeScript, GSAP, Three.js, WebGL, C#, ASP.NET Core, Angular, Node.js, Python, SQL Server, Firebase, OpenAI API
+- **3D Character** — custom GLTF model rendered with `@react-three/fiber`, animated via bone manipulation (`boneData.ts`), with encrypted model loading to protect the asset
+- **Animations** — GSAP ScrollTrigger drives all section transitions; split-text reveals on headings
+- **Responsive** — fully functional on mobile; 3D model conditionally loaded only on desktop to keep mobile performance fast
+- **Deployment** — Vite build → Vercel edge network; auto-aliases on every push
 
-![Protfolio-Preview](https://github.com/user-attachments/assets/3c4557e7-6392-4928-b8a9-7b2476ef4edd)
+> This project uses GSAP Club plugins. For production licensing: https://gsap.com/docs/v3/Installation/
+
+---
 
 ## License
 
