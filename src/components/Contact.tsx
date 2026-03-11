@@ -26,7 +26,7 @@ const Contact = () => {
           <div className="contact-box">
             <h4>Social</h4>
             <a
-              href="https://github.com/"
+              href="https://github.com/nishant2-1"
               target="_blank"
               rel="noopener noreferrer"
               data-cursor="disable"
@@ -35,7 +35,7 @@ const Contact = () => {
               GitHub <MdArrowOutward />
             </a>
             <a
-              href="https://leetcode.com/"
+              href="https://leetcode.com/u/nishant1-1/"
               target="_blank"
               rel="noopener noreferrer"
               data-cursor="disable"
@@ -44,16 +44,14 @@ const Contact = () => {
               LeetCode <MdArrowOutward />
             </a>
             <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#work"
               data-cursor="disable"
               className="contact-social"
             >
               Portfolio <MdArrowOutward />
             </a>
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/nishant-landage-76866a2b3/"
               target="_blank"
               rel="noopener noreferrer"
               data-cursor="disable"
