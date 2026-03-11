@@ -6,31 +6,51 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          I am a full-stack software developer focused on building secure,
-          scalable, and practical digital products across frontend, backend,
-          databases, and cloud environments. My experience covers C#/.NET,
-          React, Angular, Node.js, SQL Server, and Azure, with emphasis on
-          clean architecture, reliable APIs, and strong user experience.
+          Full-stack developer with 3+ years of hands-on experience delivering
+          web applications, enterprise dashboards, and AI-assisted digital
+          tools. I work across the entire stack — from C#/.NET APIs and SQL
+          databases to React, Angular, and cloud deployments on Azure — with a
+          strong focus on code quality, testing, and real business outcomes.
         </p>
         <p className="para">
-          I am currently completing an MSc in Software Engineering at
-          Nottingham Trent University while continuing to develop projects in
-          AI-assisted applications, system simulations, and data-driven tools.
-          I enjoy turning complex requirements into production-ready software
-          that is maintainable, testable, and easy to extend.
+          Currently completing an MSc in Software Engineering at Nottingham
+          Trent University (expected Sep 2025) while actively building
+          projects in Python AI, system simulation, and cross-platform mobile.
+          I take ownership from design to deployment and bring structured
+          Agile delivery to every team I join.
         </p>
+
+        <div className="about-stats">
+          <div className="about-stat">
+            <span className="about-stat-number">3+</span>
+            <span className="about-stat-label">Years Experience</span>
+          </div>
+          <div className="about-stat">
+            <span className="about-stat-number">5+</span>
+            <span className="about-stat-label">Projects Delivered</span>
+          </div>
+          <div className="about-stat">
+            <span className="about-stat-number">MSc</span>
+            <span className="about-stat-label">NTU, Sep 2025</span>
+          </div>
+          <div className="about-stat">
+            <span className="about-stat-number">8.91</span>
+            <span className="about-stat-label">B.Tech CGPA</span>
+          </div>
+        </div>
+
         <div className="visa-info">
           <span>
-            Core Engineering: C#, JavaScript, TypeScript, SQL, Python,
-            ASP.NET Core, React, Angular
+            ⚙️ Core: C#, JavaScript, TypeScript, Python, SQL, ASP.NET Core,
+            React, Angular, Node.js
           </span>
           <span>
-            Delivery & Quality: Azure, REST APIs, CI/CD, Unit Testing, Agile,
-            Scrum, Documentation
+            ☁️ Cloud & Delivery: Azure, REST APIs, CI/CD, Unit Testing, Agile,
+            Scrum, Git
           </span>
           <span>
-            AI, Mobile & Systems: TensorFlow, OpenAI API, Flutter, React
-            Native, Firebase, system simulation
+            🤖 AI & Mobile: TensorFlow, OpenAI API, Flutter, React Native,
+            Firebase
           </span>
         </div>
       </div>
