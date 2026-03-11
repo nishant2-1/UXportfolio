@@ -10,28 +10,52 @@ type CertificateItem = {
 
 const certificates: CertificateItem[] = [
   {
-    title: "Cloud Fundamentals Certification",
-    issuer: "Microsoft / Azure",
-    date: "Add Date",
+    title: "Introduction to AI",
+    issuer: "Google Career Certificates / Coursera",
+    date: "March 10, 2026",
     description:
-      "Foundational certification focused on cloud concepts, security, pricing, and deployment models for modern application delivery.",
-    credentialUrl: "https://www.linkedin.com/in/nishant-landage-76866a2b3/",
+      "Foundational AI certification covering core concepts, practical applications, and AI-driven problem solving in modern products.",
+    credentialUrl: "https://coursera.org/verify/YL44T644DP35",
   },
   {
-    title: "Software Testing & QA Certification",
-    issuer: "Professional Learning Platform",
-    date: "Add Date",
+    title: "Build a Free Website with WordPress",
+    issuer: "Coursera Project Network",
+    date: "February 22, 2026",
     description:
-      "Covers core QA practices including test planning, defect lifecycle handling, automation basics, and release quality standards.",
-    credentialUrl: "https://www.linkedin.com/in/nishant-landage-76866a2b3/",
+      "Hands-on project certificate focused on rapid website development, WordPress setup, content structuring, and deployment basics.",
+    credentialUrl: "https://coursera.org/verify/MFTS30K2M80M",
   },
   {
-    title: "AI / Data Analytics Certification",
-    issuer: "Professional Learning Platform",
-    date: "Add Date",
+    title: "Java 11 Essentials",
+    issuer: "Infosys Springboard",
+    date: "May 13, 2024",
     description:
-      "Demonstrates practical understanding of AI-assisted workflows, data interpretation, and analytics-driven decision making.",
-    credentialUrl: "https://www.linkedin.com/in/nishant-landage-76866a2b3/",
+      "Covers Java fundamentals, object-oriented programming principles, and practical coding foundations for enterprise-ready development.",
+    credentialUrl: "https://verify.onwingspan.com",
+  },
+  {
+    title: "Continuous Integration and Delivery - DevOps",
+    issuer: "Infosys Springboard",
+    date: "November 23, 2023",
+    description:
+      "Certificate focused on CI/CD concepts, build and release automation, and DevOps practices that improve delivery speed and reliability.",
+    credentialUrl: "https://verify.onwingspan.com",
+  },
+  {
+    title: "Introduction to Agile Methodology",
+    issuer: "Infosys Springboard",
+    date: "November 23, 2023",
+    description:
+      "Highlights Agile fundamentals including iterative delivery, sprint planning, team collaboration, and customer-focused execution.",
+    credentialUrl: "https://verify.onwingspan.com",
+  },
+  {
+    title: "DevOps Foundation Certification",
+    issuer: "Infosys Springboard",
+    date: "October 31, 2023",
+    description:
+      "Demonstrates understanding of DevOps culture, automation mindset, and the integration of development and operations workflows.",
+    credentialUrl: "https://verify.onwingspan.com",
   },
 ];
 
@@ -45,7 +69,9 @@ const Certificates = () => {
         </h2>
         <p className="certificates-lead">
           Each certificate card includes a summary and direct hyperlinks so
-          visitors can instantly open and verify the credential page.
+          visitors can instantly open and verify the credential page. The
+          latest learning is shown first so recruiters can quickly assess
+          current upskilling and technical depth.
         </p>
       </div>
 
