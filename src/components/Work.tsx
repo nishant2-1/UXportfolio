@@ -157,13 +157,13 @@ const projects = [
     id: "5",
     index: "06",
     title: "Handwritten Digit Recognition",
-    subtitle: "KNN + GridSearchCV pipeline with FastAPI and Streamlit",
+    subtitle: "KNN pipeline with FastAPI + Streamlit",
     label: "Machine Learning",
     year: "2025",
     status: "Completed",
     domain: "AI/ML",
     description:
-      "Built a production-style MNIST digit classifier that preprocesses uploaded images into normalized 784-length vectors, tunes KNN with GridSearchCV + 5-fold cross-validation, and exposes inference through API and UI interfaces.",
+      "MNIST digit classifier with normalized 784-vector preprocessing and tuned KNN via GridSearchCV + 5-fold CV.",
     stack: [
       "Python",
       "scikit-learn",
@@ -173,12 +173,11 @@ const projects = [
       "GitHub Actions",
     ],
     impact:
-      "Achieved around 95% test accuracy with sub-10ms per-image inference latency while keeping runs reproducible with CI and containerized execution.",
+      "~95% test accuracy and sub-10ms inference with reproducible CI + Docker execution.",
     highlights: [
-      "Modular ML training pipeline using KNN, GridSearchCV, and KFold cross-validation",
-      "Evaluation suite covering accuracy, F1 score, confusion matrix, and inference latency",
-      "Dual deployment paths: FastAPI backend endpoint and Streamlit interactive demo",
-      "CI checks for lint, formatting, type-checking, and test reliability",
+      "Modular training flow with KNN + GridSearchCV + KFold CV",
+      "Evaluated with accuracy, F1, confusion matrix, and latency",
+      "Deployed as FastAPI backend and Streamlit demo with CI + Docker",
     ],
     primaryText: "Live Demo",
     primaryHref: "https://handwrittendigitreco-43w78vcarhyyytvn9xnbll.streamlit.app",
@@ -193,40 +192,40 @@ const projects = [
 
 const Work = () => {
   useEffect(() => {
-    let translateX = 0;
-
-    function setTranslateX() {
-      const box = document.getElementsByClassName("work-box");
-      if (!box.length) return;
+    const getTranslateX = () => {
+      const flex = document.querySelector(".work-flex") as HTMLElement | null;
       const container = document.querySelector(".work-container") as HTMLElement | null;
-      if (!container) return;
-      const rectLeft = container.getBoundingClientRect().left;
-      const rect = (box[0] as HTMLElement).getBoundingClientRect();
-      const parentWidth =
-        (box[0] as HTMLElement).parentElement?.getBoundingClientRect().width ?? 0;
-      const padding = parseInt(window.getComputedStyle(box[0] as Element).padding) / 2;
-      translateX = rect.width * box.length - (rectLeft + parentWidth) + padding;
-    }
-
-    setTranslateX();
+      if (!flex || !container) return 0;
+      return Math.max(0, flex.scrollWidth - container.clientWidth + 24);
+    };
 
     const timeline = gsap.timeline({
       scrollTrigger: {
         trigger: ".work-section",
         start: "top top",
-        end: `+=${translateX}`,
+        // Keep the section pinned until horizontal movement fully completes.
+        end: () => `+=${getTranslateX() + Math.round(window.innerHeight * 1.1)}`,
         scrub: true,
         pin: true,
+        pinSpacing: true,
+        invalidateOnRefresh: true,
+        anticipatePin: 1,
         id: "work",
       },
     });
 
     timeline.to(".work-flex", {
-      x: -translateX,
+      x: () => -getTranslateX(),
       ease: "none",
     });
 
+    const handleResize = () => ScrollTrigger.refresh();
+    window.addEventListener("resize", handleResize);
+    window.addEventListener("load", handleResize);
+
     return () => {
+      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("load", handleResize);
       timeline.kill();
       ScrollTrigger.getById("work")?.kill();
     };
@@ -255,7 +254,7 @@ const Work = () => {
                   <span>{project.status}</span>
                   <span>{project.domain}</span>
                 </div>
-                <p>{project.description}</p>
+                <p className="work-description">{project.description}</p>
                 <div className="work-stack" aria-label={`${project.title} stack`}>
                   {project.stack.map((item) => (
                     <span key={`${project.id}-${item}`}>{item}</span>
@@ -263,7 +262,7 @@ const Work = () => {
                 </div>
                 <p className="work-impact">Impact: {project.impact}</p>
                 <ul className="work-highlights" aria-label={`${project.title} highlights`}>
-                  {project.highlights.map((highlight) => (
+                  {project.highlights.slice(0, 2).map((highlight) => (
                     <li key={`${project.id}-${highlight}`}>{highlight}</li>
                   ))}
                 </ul>

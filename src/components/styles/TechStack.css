@@ -11,6 +11,8 @@
     rgba(6, 24, 34, 0.38) 0%,
     rgba(7, 16, 28, 0.1) 100%
   );
+  position: relative;
+  z-index: 1;
 }
 
 .techstack-layout h2 {
@@ -74,6 +76,8 @@
   border: 1px solid rgba(0, 212, 255, 0.14);
   border-radius: 14px;
   background: rgba(8, 20, 35, 0.35);
+  overflow: hidden;
+  position: relative;
 }
 
 .tech-bubble-chip {

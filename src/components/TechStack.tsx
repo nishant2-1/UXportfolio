@@ -115,7 +115,7 @@ const TechStack = () => {
         <div className={`tech-bubble-board ${alignedView ? "aligned" : "bubble"}`}>
           {allSkills.map((skill, index) => {
             const angle = ((index * 47) % 360) * (Math.PI / 180);
-            const radius = 26 + (index % 6) * 7;
+            const radius = 14 + (index % 6) * 4;
             const offsetX = Math.cos(angle) * radius;
             const offsetY = Math.sin(angle) * radius;
 
