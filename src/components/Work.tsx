@@ -195,8 +195,14 @@ const Work = () => {
     const getTranslateX = () => {
       const flex = document.querySelector(".work-flex") as HTMLElement | null;
       const container = document.querySelector(".work-container") as HTMLElement | null;
-      if (!flex || !container) return 0;
-      return Math.max(0, flex.scrollWidth - container.clientWidth + 24);
+      const boxes = Array.from(
+        document.querySelectorAll(".work-box")
+      ) as HTMLElement[];
+      if (!flex || !container || boxes.length === 0) return 0;
+
+      const lastBox = boxes[boxes.length - 1];
+      const cardEdge = lastBox.offsetLeft + lastBox.offsetWidth;
+      return Math.max(0, cardEdge - container.clientWidth + 24);
     };
 
     const timeline = gsap.timeline({
@@ -204,7 +210,7 @@ const Work = () => {
         trigger: ".work-section",
         start: "top top",
         // Keep the section pinned until horizontal movement fully completes.
-        end: () => `+=${getTranslateX() + Math.round(window.innerHeight * 1.1)}`,
+        end: () => `+=${getTranslateX() + 80}`,
         scrub: true,
         pin: true,
         pinSpacing: true,
